@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CodeBlock from "@/components/CodeBlock";
+import Screenshot from "@/components/Screenshot";
 import { FileKey, KeyRound, Lock, Unlock } from "lucide-react";
 
 const SubstitutionCipher = () => {
@@ -191,7 +192,26 @@ const SubstitutionCipher = () => {
         </div>
       </section>
 
+      {/* Screenshots Section */}
       <section className="academic-section bg-background">
+        <div className="academic-container max-w-5xl">
+          <h2 className="section-title">Screenshots</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Screenshot
+              src="/images/substitution-cipher/SUBSTITUTION CIPHER ENCRYPT WITH KEY.png"
+              alt="Encryption Interface"
+              caption="Encryption interface with generated key and encrypted output"
+            />
+            <Screenshot
+              src="/images/substitution-cipher/SUBSTITUTION DECRYPT WITH KEY.png"
+              alt="Decryption Interface"
+              caption="Decryption interface showing ciphertext decryption with key"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="academic-section bg-muted/30">
         <div className="academic-container max-w-5xl">
           <div className="grid md:grid-cols-2 gap-8">
             <div>

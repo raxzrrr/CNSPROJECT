@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# CNS Portfolio - Cryptography and Network Services
 
-## Project info
+Academic portfolio website showcasing projects from the Cryptography and Network Services (CNS) course.
 
-**URL**: https://lovable.dev/projects/4488f00d-c95a-4a16-ac64-699b5534334d
+## Student Information
 
-## How can I edit this code?
+- **Name**: Mohit Sherkhane
+- **USN**: 01FE22BCS072
+- **Semester**: 7th Semester, D Division
+- **Department**: Computer Science and Engineering
+- **Institution**: KLE Technological University
 
-There are several ways of editing your application.
+## Projects Showcased
 
-**Use Lovable**
+1. **CAPTCHA Verification System** - Secure web application with CAPTCHA verification
+2. **Cryptography Library** - Comprehensive Python library for cryptographic algorithms
+3. **Password Cracking Tool** - Multi-functional security testing tool
+4. **Substitution Cipher** - GUI-based classical cipher implementation
+5. **Firewall Configuration** - Network access control demonstration
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4488f00d-c95a-4a16-ac64-699b5534334d) and start prompting.
+## Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React, TypeScript, Vite
+- **UI Framework**: shadcn-ui, Tailwind CSS
+- **Routing**: React Router DOM
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```sh
+# Build the project
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build
+npm run preview
+```
 
-## What technologies are used for this project?
+## Deployment
 
-This project is built with:
+This project can be deployed to any static hosting service like:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Netlify** - Recommended for easy deployment
+- **Vercel**
+- **GitHub Pages**
 
-## How can I deploy this project?
+Simply build the project and deploy the `dist` folder.
 
-Simply open [Lovable](https://lovable.dev/projects/4488f00d-c95a-4a16-ac64-699b5534334d) and click on Share -> Publish.
+## Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+cns-portfolio-showcase/
+├── public/
+│   ├── images/          # Project screenshots
+│   └── favicon.ico
+├── src/
+│   ├── components/      # React components
+│   ├── pages/          # Page components
+│   └── main.tsx        # Entry point
+└── package.json
+```
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This is an academic project for educational purposes.

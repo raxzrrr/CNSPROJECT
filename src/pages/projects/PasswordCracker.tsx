@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CodeBlock from "@/components/CodeBlock";
+import Screenshot from "@/components/Screenshot";
 import { Key, Hash, Zap, Shield } from "lucide-react";
 
 const PasswordCracker = () => {
@@ -218,6 +219,22 @@ const PasswordCracker = () => {
               <code className="text-xs bg-muted p-2 rounded block mb-2">SGVsbG8gV29ybGQ=</code>
               <p className="text-sm text-foreground/70 mb-2">Output:</p>
               <code className="text-xs bg-accent/10 p-2 rounded block">Hello World</code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Screenshots Section */}
+      <section className="academic-section bg-muted/30">
+        <div className="academic-container max-w-5xl">
+          <h2 className="section-title">Screenshots</h2>
+          <div className="flex justify-center">
+            <div className="max-w-4xl w-full">
+              <Screenshot
+                src="/images/password-cracker/PASSWORD CRACKER EXAMPLE.png"
+                alt="Password Cracker Example"
+                caption="Password cracking tool in action showing various attack methods and results"
+              />
             </div>
           </div>
         </div>

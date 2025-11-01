@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CodeBlock from "@/components/CodeBlock";
+import Screenshot from "@/components/Screenshot";
 import { Lock, Hash, Key, Shield } from "lucide-react";
 
 const CryptoLibrary = () => {
@@ -152,7 +153,23 @@ sha256_hash = HashFunctions.sha256("Hello, World!")`;
         </div>
       </section>
 
+      {/* Screenshots Section */}
       <section className="academic-section bg-muted/30">
+        <div className="academic-container max-w-5xl">
+          <h2 className="section-title">Screenshots</h2>
+          <div className="flex justify-center">
+            <div className="max-w-4xl w-full">
+              <Screenshot
+                src="/images/crypto-library/CRYPTOGRAPHY LIBRARY.png"
+                alt="Cryptography Library Demo Menu"
+                caption="Interactive demo menu showing all available cryptographic algorithms"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="academic-section bg-background">
         <div className="academic-container max-w-5xl">
           <h2 className="section-title">Security Warnings</h2>
           <div className="bg-destructive/10 border border-destructive/30 rounded-lg p-6">

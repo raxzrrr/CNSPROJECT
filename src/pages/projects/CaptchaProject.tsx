@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CodeBlock from "@/components/CodeBlock";
+import Screenshot from "@/components/Screenshot";
 import { Shield, Check, FileText, Eye } from "lucide-react";
 
 const CaptchaProject = () => {
@@ -245,6 +246,25 @@ def verify_captcha():
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Screenshots Section */}
+      <section className="academic-section bg-background">
+        <div className="academic-container max-w-5xl">
+          <h2 className="section-title">Screenshots</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Screenshot
+              src="/images/captcha/Captcha Verification.png"
+              alt="CAPTCHA Verification Main Interface"
+              caption="Main form with CAPTCHA image and text input"
+            />
+            <Screenshot
+              src="/images/captcha/Stored Data Example.png"
+              alt="Stored Data View"
+              caption="View of all stored entries with timestamps"
+            />
           </div>
         </div>
       </section>
