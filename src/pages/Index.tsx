@@ -33,6 +33,13 @@ const Index = () => {
       link: "/projects/substitution-cipher",
       tags: ["Classical Cipher", "GUI", "Tkinter"],
     },
+    {
+      title: "Firewall Configuration",
+      description: "Step-by-step demonstration of firewall configuration for network access control, including iptables rules, NAT configuration, and security best practices.",
+      icon: Network,
+      link: "/projects/firewall",
+      tags: ["Network Security", "Firewall", "Access Control", "iptables"],
+    },
   ];
 
   return (
@@ -95,27 +102,11 @@ const Index = () => {
       <section className="academic-section bg-muted/30">
         <div className="academic-container">
           <h2 className="section-title text-center">Portfolio Projects</h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Firewall Configuration CTA */}
-      <section className="academic-section bg-gradient-to-r from-secondary to-primary text-primary-foreground">
-        <div className="academic-container text-center">
-          <Network className="h-16 w-16 mx-auto mb-6 text-accent" />
-          <h2 className="text-3xl font-bold mb-4">Firewall Configuration Demonstration</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-primary-foreground/90">
-            Step-by-step tutorial and documentation on implementing firewall rules for network access control
-          </p>
-          <a href="/firewall">
-            <button className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 rounded-lg font-semibold text-lg transition-all hover:shadow-lg">
-              View Firewall Configuration
-            </button>
-          </a>
         </div>
       </section>
 

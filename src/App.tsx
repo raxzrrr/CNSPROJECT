@@ -29,7 +29,7 @@ const App = () => (
           <Route path="/projects/crypto-library" element={<CryptoLibrary />} />
           <Route path="/projects/password-cracker" element={<PasswordCracker />} />
           <Route path="/projects/substitution-cipher" element={<SubstitutionCipher />} />
-          <Route path="/firewall" element={<Firewall />} />
+          <Route path="/projects/firewall" element={<Firewall />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

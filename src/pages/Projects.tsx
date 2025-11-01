@@ -33,6 +33,13 @@ const Projects = () => {
       link: "/projects/substitution-cipher",
       tags: ["Classical Cipher", "GUI", "Tkinter"],
     },
+    {
+      title: "Firewall Configuration",
+      description: "Step-by-step demonstration of firewall configuration for network access control, including iptables rules, NAT configuration, and security best practices.",
+      icon: Shield,
+      link: "/projects/firewall",
+      tags: ["Network Security", "Firewall", "Access Control", "iptables"],
+    },
   ];
 
   return (
@@ -52,7 +59,7 @@ const Projects = () => {
       {/* Projects Grid */}
       <section className="academic-section bg-background">
         <div className="academic-container">
-          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
