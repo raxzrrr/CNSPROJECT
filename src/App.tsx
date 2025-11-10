@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Evaluation from "./pages/Evaluation";
 import CaptchaProject from "./pages/projects/CaptchaProject";
 import CryptoLibrary from "./pages/projects/CryptoLibrary";
 import PasswordCracker from "./pages/projects/PasswordCracker";
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/evaluation" element={<Evaluation />} />
           <Route path="/projects/captcha" element={<CaptchaProject />} />
           <Route path="/projects/crypto-library" element={<CryptoLibrary />} />
           <Route path="/projects/password-cracker" element={<PasswordCracker />} />
